@@ -9,8 +9,114 @@ To open dev tools, open the command bar and type "open console"
     /*
     --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
     */
+    --color-base-gray-dark-50: rgb(46, 46, 46);
+    --color-base-gray-dark-50-rgb: 46, 46, 46;
+    --color-base-gray-dark-70: rgb(62, 62, 62);
+    --color-base-gray-dark-70-rgb: 62, 62, 62;
+    --color-base-gray-dark-80: rgb(80, 80, 80);
+    --color-base-gray-dark-80-rgb: 80, 80, 80;
+    --color-base-black: rgb(0, 0, 0);
+    --color-base-black-rgb: 0, 0, 0;
+    --color-base-white: rgb(255, 255, 255);
+    --color-base-white-rgb: 255, 255, 255;
+    --color-brand: #0d4ffb;
+    --color-outline: #b3b3b3;
+    --color-base-amber-40: rgb(255, 236, 188);
+    --color-base-amber-40-rgb: 255, 236, 188;
+    --color-base-amber-110: rgb(173, 87, 0);
+    --color-base-amber-110-rgb: 173, 87, 0;
+    --color-base-crimson-40: rgb(252, 229, 240);
+    --color-base-crimson-40-rgb: 252, 229, 240;
+    --color-base-crimson-110: rgb(211, 30, 102);
+    --color-base-crimson-110-rgb: 211, 30, 102;
+    --color-base-cyan-40: rgb(216, 243, 246);
+    --color-base-cyan-40-rgb: 216, 243, 246;
+    --color-base-cyan-110: rgb(12, 119, 146);
+    --color-base-cyan-110-rgb: 12, 119, 146;
+    --color-base-grass-40: rgb(223, 243, 223);
+    --color-base-grass-40-rgb: 223, 243, 223;
+    --color-base-grass-110: rgb(41, 124, 59);
+    --color-base-grass-110-rgb: 41, 124, 59;
+    --color-base-gray-20: rgb(248, 248, 248);
+    --color-base-gray-20-rgb: 248, 248, 248;
+    --color-base-gray-30: rgb(243, 243, 243);
+    --color-base-gray-30-rgb: 243, 243, 243;
+    --color-base-gray-40: rgb(237, 237, 237);
+    --color-base-gray-40-rgb: 237, 237, 237;
+    --color-base-gray-50: rgb(232, 232, 232);
+    --color-base-gray-50-rgb: 232, 232, 232;
+    --color-base-gray-60: rgb(226, 226, 226);
+    --color-base-gray-60-rgb: 226, 226, 226;
+    --color-base-gray-70: rgb(219, 219, 219);
+    --color-base-gray-70-rgb: 219, 219, 219;
+    --color-base-gray-80: rgb(199, 199, 199);
+    --color-base-gray-80-rgb: 199, 199, 199;
+    --color-base-gray-100: rgb(133, 133, 133);
+    --color-base-gray-100-rgb: 133, 133, 133;
+    --color-base-gray-110: rgb(89, 89, 89);
+    --color-base-gray-110-rgb: 89, 89, 89;
+    --color-base-gray-120: rgb(23, 23, 23);
+    --color-base-gray-120-rgb: 23, 23, 23;
+    --color-base-green-110: rgb(24, 121, 78);
+    --color-base-green-110-rgb: 24, 121, 78;
+    --color-base-indigo-40: rgb(230, 237, 254);
+    --color-base-indigo-40-rgb: 230, 237, 254;
+    --color-base-indigo-110: rgb(52, 81, 178);
+    --color-base-indigo-110-rgb: 52, 81, 178;
+    --color-base-pink-40: rgb(252, 229, 243);
+    --color-base-pink-40-rgb: 252, 229, 243;
+    --color-base-pink-110: rgb(205, 29, 141);
+    --color-base-pink-110-rgb: 205, 29, 141;
+    --color-base-purple-40: rgb(243, 231, 252);
+    --color-base-purple-40-rgb: 243, 231, 252;
+    --color-base-purple-110: rgb(121, 58, 175);
+    --color-base-purple-110-rgb: 121, 58, 175;
+    --color-base-red-80: rgb(235, 144, 145);
+    --color-base-red-80-rgb: 235, 144, 145;
+    --color-base-red-90: rgb(229, 72, 77);
+    --color-base-red-90-rgb: 229, 72, 77;
+    --color-base-red-100: rgb(220, 61, 67);
+    --color-base-red-100-rgb: 220, 61, 67;
+    --color-base-red-110: rgb(205, 43, 49);
+    --color-base-red-110-rgb: 205, 43, 49;
+    --color-base-system-blue-80: rgb(76, 162, 255);
+    --color-base-system-blue-80-rgb: 76, 162, 255;
+    --color-base-system-blue-90: rgb(0, 122, 255);
+    --color-base-system-blue-90-rgb: 0, 122, 255;
+    --color-base-system-blue-100: rgb(0, 115, 240);
+    --color-base-system-blue-100-rgb: 0, 115, 240;
+    --color-base-system-blue-110: rgb(0, 105, 219);
+    --color-base-system-blue-110-rgb: 0, 105, 219;
+    --color-base-teal-40: rgb(217, 243, 238);
+    --color-base-teal-40-rgb: 217, 243, 238;
+    --color-base-teal-110: rgb(6, 122, 111);
+    --color-base-teal-110-rgb: 6, 122, 111;
+    --gradient-brand: linear-gradient(190.1deg, #6953f2 -7.24%, #0c52f9 109.66%);
+    --shadow-color-15: 0, 0, 0, .15;
+    --color-primary: #0d4ffb;
+    --color-container-content-base-1: #828286;
+    --color-secondary-container: #efeff0;
+    --color-tertiary-container: #f4f4f5;
+    --color-on-error-container: #dc362e;
+    --color-surface-dim: #ebebeb;
+    --color-surface-rgb: 255, 255, 255;
+    --color-surface-dark-rgb: 0,0,0;
+    --color-on-surface: #202124;
+    --color-on-surface-rgb: 32, 33, 36;
+    --color-on-surface-variant: #808080;
+    --color-on-surface-variant-rgb: 128, 128, 128;
+    --color-outline: #b3b3b3;
+    --color-outline-variant: #88aafc;
+    --color-solids-purple: #6A4BE5;
+    --color-scrim: #ffffff95;
+    --color-glass-surface: #ffffff60;
+    --color-glass-container: #ffffff30;
+    --color-mute: #881bdf;
+    --color-pin: #f6ce46;
+    --color-delete: #ff2627;
+    --color-delete-background: #ff141620;
   }
-  
+
   @media (prefers-color-scheme: dark) {
     :root {
       --audio-bar-bg: #303236;
@@ -144,4 +250,3 @@ To open dev tools, open the command bar and type "open console"
       --shadow-color-15: 255, 255, 255, .1;
     }
   }
-  
