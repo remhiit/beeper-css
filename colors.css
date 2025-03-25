@@ -1,0 +1,147 @@
+/*
+# Custom Beeper.app style
+This file will be injected as a <style> tag
+After making your changes, type "Reload custom CSS" in the command bar
+To open dev tools, open the command bar and type "open console"
+*/
+
+:root {
+    /*
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+    */
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --audio-bar-bg: #303236;
+      --audio-bar-border: #606366;
+      --audio-bar-button: #d8d8d8;
+      --audio-bar-preview-progress: #ffffff;
+      --color-background-emoji-mart: #fff;
+      --color-base-amber-40: rgb(63, 34, 0);
+      --color-base-amber-40-rgb: 63, 34, 0;
+      --color-base-amber-110: rgb(241, 161, 13);
+      --color-base-amber-110-rgb: 241, 161, 13;
+      --color-base-black-rgb: 0, 0, 0;
+      --color-base-black: rgb(0, 0, 0);
+      --color-base-crimson-40: rgb(72, 26, 45);
+      --color-base-crimson-40-rgb: 72, 26, 45;
+      --color-base-crimson-110: rgb(247, 97, 144);
+      --color-base-crimson-110-rgb: 247, 97, 144;
+      --color-base-cyan-40: rgb(7, 48, 59);
+      --color-base-cyan-40-rgb: 7, 48, 59;
+      --color-base-cyan-110: rgb(0, 194, 215);
+      --color-base-cyan-110-rgb: 0, 194, 215;
+      --color-base-grass-40: rgb(22, 48, 29);
+      --color-base-grass-40-rgb: 22, 48, 29;
+      --color-base-grass-110: rgb(99, 193, 116);
+      --color-base-grass-110-rgb: 99, 193, 116;
+      --color-base-gray-10: rgb(22, 22, 22);
+      --color-base-gray-10-rgb: 22, 22, 22;
+      --color-base-gray-20: rgb(28, 28, 28);
+      --color-base-gray-20-rgb: 28, 28, 28;
+      --color-base-gray-30: rgb(35, 35, 35);
+      --color-base-gray-30-rgb: 35, 35, 35;
+      --color-base-gray-40: rgb(40, 40, 40);
+      --color-base-gray-40-rgb: 40, 40, 40;
+      --color-base-gray-50: rgb(46, 46, 46);
+      --color-base-gray-50-rgb: 46, 46, 46;
+      --color-base-gray-60: rgb(52, 52, 52);
+      --color-base-gray-60-rgb: 52, 52, 52;
+      --color-base-gray-70: rgb(62, 62, 62);
+      --color-base-gray-70-rgb: 62, 62, 62;
+      --color-base-gray-80: rgb(80, 80, 80);
+      --color-base-gray-80-rgb: 80, 80, 80;
+      --color-base-gray-85: rgb(94, 94, 94);
+      --color-base-gray-85-rgb: 94, 94, 94;
+      --color-base-gray-90: rgb(112, 112, 112);
+      --color-base-gray-90-rgb: 112, 112, 112;
+      --color-base-gray-100: rgb(126, 126, 126);
+      --color-base-gray-100-rgb: 126, 126, 126;
+      --color-base-gray-110: rgb(173, 173, 173);
+      --color-base-gray-110-rgb: 173, 173, 173;
+      --color-base-gray-120: rgb(237, 237, 237);
+      --color-base-gray-120-rgb: 237, 237, 237;
+      --color-base-gray-dark-50-rgb: 46, 46, 46;
+      --color-base-gray-dark-50: rgb(46, 46, 46);
+      --color-base-gray-dark-70-rgb: 62, 62, 62;
+      --color-base-gray-dark-70: rgb(62, 62, 62);
+      --color-base-gray-dark-80-rgb: 80, 80, 80;
+      --color-base-gray-dark-80: rgb(80, 80, 80);
+      --color-base-green-110: rgb(76, 195, 138);
+      --color-base-green-110-rgb: 76, 195, 138;
+      --color-base-indigo-40: rgb(28, 39, 79);
+      --color-base-indigo-40-rgb: 28, 39, 79;
+      --color-base-indigo-110: rgb(132, 157, 255);
+      --color-base-indigo-110-rgb: 132, 157, 255;
+      --color-base-pink-40: rgb(69, 26, 55);
+      --color-base-pink-40-rgb: 69, 26, 55;
+      --color-base-pink-110: rgb(246, 92, 182);
+      --color-base-pink-110-rgb: 246, 92, 182;
+      --color-base-purple-40: rgb(58, 30, 72);
+      --color-base-purple-40-rgb: 58, 30, 72;
+      --color-base-purple-110: rgb(191, 122, 240);
+      --color-base-purple-110-rgb: 191, 122, 240;
+      --color-base-red-80: rgb(170, 36, 41);
+      --color-base-red-80-rgb: 170, 36, 41;
+      --color-base-red-90: rgb(229, 72, 77);
+      --color-base-red-90-rgb: 229, 72, 77;
+      --color-base-red-100: rgb(242, 85, 90);
+      --color-base-red-100-rgb: 242, 85, 90;
+      --color-base-red-110: rgb(255, 99, 105);
+      --color-base-red-110-rgb: 255, 99, 105;
+      --color-base-system-blue-80: rgb(0, 91, 184);
+      --color-base-system-blue-80-rgb: 0, 91, 184;
+      --color-base-system-blue-90: rgb(10, 132, 255);
+      --color-base-system-blue-90-rgb: 10, 132, 255;
+      --color-base-system-blue-100: rgb(66, 160, 255);
+      --color-base-system-blue-100-rgb: 66, 160, 255;
+      --color-base-system-blue-110: rgb(92, 173, 255);
+      --color-base-system-blue-110-rgb: 92, 173, 255;
+      --color-base-teal-40: rgb(7, 49, 43);
+      --color-base-teal-40-rgb: 7, 49, 43;
+      --color-base-teal-110: rgb(10, 197, 179);
+      --color-base-teal-110-rgb: 10, 197, 179;
+      --color-base-white-rgb: 255, 255, 255;
+      --color-base-white: rgb(255, 255, 255);
+      --color-bg-rgb: 30, 30, 46;
+      --color-bg: #1e1e2e;
+      --color-brand: #0d4ffb;
+      --color-container-content-base-1: #828286;
+      --color-delete-background: #ff141620
+      --color-delete: #ff2627;
+      --color-fg: white;
+      --color-fg-rgb: 255, 255, 255;
+      --color-glass-container: #00000020;
+      --color-glass-surface: #00000060;
+      --color-gradient: #1a73e8;
+      --color-key-bottom-bg: #2e2e2e;
+      --color-mute: #912ce1;
+      --color-on-error-container: #dc362e;
+      --color-on-surface-rgb: 246, 246, 246;
+      --color-on-surface-variant-rgb: 128, 128, 128;
+      --color-on-surface-variant: #808080;
+      --color-on-surface: #f6f6f6;
+      --color-outline-variant: #12307d;
+      --color-outline: #4c4c4c;
+      --color-pin: #f6ce46;
+      --color-primary-container: #1c1c1d;
+      --color-primary-rgb: 203, 166, 247;
+      --color-primary: #2561fb;
+      --color-scrim: #00000085;
+      --color-secondary-container: #232326;
+      --color-solids-purple: #6A4BE5;
+      --color-surface-bright: #262626;
+      --color-surface-dark-rgb: 255, 255, 255;
+      --color-surface-dim: #ebebeb;
+      --color-surface-rgb: 0, 0, 0;
+      --color-tertiary-container: #1c1c1d;
+      --compose-message-accent: #d8d8d8;
+      --gradient-brand: linear-gradient(190.1deg, #6953f2 -7.24%, #0c52f9 109.66%);
+      --key-bg: linear-gradient(to bottom, #373737, #1b1b1b);
+      --key-border: linear-gradient(to bottom, #363636, #303130);
+      --prefs-well: rgb(9, 9, 9)
+      --shadow-color-15: 255, 255, 255, .1;
+    }
+  }
+  
